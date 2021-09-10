@@ -6,7 +6,6 @@ class Graph:
         self.graph[u].append(v)
     def BFS(self, start, end):
         if start not in self.graph or end not in self.graph:
-            print("bad")
             return None
         visited = [False]* (max(self.graph) + 1)
         routes = {}
